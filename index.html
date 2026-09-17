@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jellybearjempire Payment</title>
+    <title>Jellybear Payment</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -110,7 +110,7 @@
 </head>
 <body class="flex flex-col items-center py-6 px-4 text-brown-600 relative overflow-x-hidden">
 
-    <!-- Background Decorative SVGs (พื้นหลังเดิมเป๊ะๆ) -->
+    <!-- Background Decorative SVGs -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <svg class="absolute top-[5%] left-[10%] w-8 h-8 text-pink-300 anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         <svg class="absolute top-[15%] left-[2%] w-6 h-6 text-green-300/80 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -118,7 +118,7 @@
         <svg class="absolute top-[10%] right-[8%] w-10 h-10 text-pink-200 anim-float-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         <svg class="absolute top-[2%] right-[20%] w-5 h-5 text-green-300/80 anim-float-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         <svg class="absolute top-[40%] -left-2 w-12 h-12 text-pink-100 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        <svg class="absolute top-[50%] right-[2%] w-6 h-6 text-green-300 anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg class="absolute top-[50%] right-[2%] w-6 h-6 text-green-300 anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg class="absolute bottom-[10%] left-[10%] w-8 h-8 text-pink-200 anim-float-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         <svg class="absolute bottom-[5%] right-[15%] w-7 h-7 text-green-200/90 anim-float-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         <svg class="absolute bottom-[20%] right-[5%] w-4 h-4 text-pink-400/40 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
@@ -129,7 +129,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-pink-200">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        คัดลอกเลขบัญชีแล้ว
+        <span id="toast-text">คัดลอกข้อมูลแล้ว</span>
     </div>
 
     <!-- Container หลัก -->
@@ -138,12 +138,10 @@
         <!-- Header -->
         <div class="text-center pt-2 pb-2 relative">
             <h1 class="text-2xl font-bold tracking-tight text-pink-500 flex items-center justify-center gap-2">
-                <!-- หัวใจซ้าย -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-400 anim-pulse">
                     <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
                 Jellybearjempire
-                <!-- หัวใจขวา -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-400 anim-pulse transform -scale-x-100">
                     <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
@@ -151,27 +149,24 @@
             <p class="text-sm font-medium text-brown-400 mt-1">Payment & Checkout</p>
         </div>
 
-        <!-- ================= ดีไซน์การ์ดแบบใหม่ (Glass & App Style) ================= -->
+        <!-- Glass Card Container -->
         <div class="glass-card rounded-[40px] p-3 relative z-10">
             
-            <!-- SVG ตกแต่งบนการ์ดที่กลับมาแล้ว 💖 -->
             <svg class="absolute -top-4 -left-2 w-9 h-9 text-pink-300 anim-float-1 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
             <svg class="absolute top-[25%] -right-3 w-7 h-7 text-green-300 anim-float-2 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
             <svg class="absolute bottom-[40%] -left-3 w-5 h-5 text-pink-400 anim-spin z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
-            <!-- รูปภาพ (พร้อมกรอบเส้นประวิ่ง) -->
+            <!-- รูปภาพ (แก้ไขชื่อไฟล์เป็น IMG_4574.jpeg เรียบร้อย) -->
             <div class="relative p-2 rounded-[36px] z-10">
-                <!-- SVG เส้นประวิ่ง -->
                 <svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" rx="34" fill="none" stroke="#FEADC4" stroke-width="2.5" stroke-dasharray="12 12" stroke-linecap="round" class="animate-dash" />
                 </svg>
-                <!-- คอนเทนเนอร์รูปภาพ -->
                 <div class="rounded-[28px] overflow-hidden relative shadow-sm border-[4px] border-white">
-                    <img src="https://placehold.co/600x600/FEADC4/ffffff?text=Jellybearjempire" alt="บัญชี Jellybearjempire" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/FEADC4/ffffff?text=Jellybearjempire'">
+                    <img src="IMG_4574.jpeg" alt="บัญชี Jellybearjempire" class="w-full h-auto object-cover">
                 </div>
             </div>
 
-            <!-- โซนข้อความ (จัดเรียงเป็นสัดส่วน) -->
+            <!-- โซนข้อความ -->
             <div class="p-4 pt-6 space-y-5">
                 
                 <!-- กล่องต้อนรับ -->
@@ -209,9 +204,8 @@
                 <!-- โซนบัญชีธนาคาร (สไตล์ Virtual Card) -->
                 <div class="space-y-4">
                     
-                    <!-- บัตรกสิกรไทย (โทนเขียวมินต์พาสเทลตามสเปกสี) -->
-                    <div class="virtual-card relative bg-gradient-to-br from-[#AFE1C0] to-[#82c99b] rounded-[24px] p-5 shadow-lg shadow-green-300/30 overflow-hidden cursor-pointer border border-white/60" onclick="copyText('0528473989', this, 'kbank')">
-                        <!-- ลายน้ำ K+ -->
+                    <!-- บัตรกสิกรไทย -->
+                    <div class="virtual-card relative bg-gradient-to-br from-[#AFE1C0] to-[#82c99b] rounded-[24px] p-5 shadow-lg shadow-green-300/30 overflow-hidden cursor-pointer border border-white/60" onclick="copyText('0528473989', this, 'kbank', 'คัดลอกเลขบัญชีแล้ว')">
                         <svg class="absolute -right-6 -bottom-6 w-32 h-32 text-white opacity-20 transform -rotate-12 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         
                         <div class="relative z-10 flex flex-col gap-4">
@@ -231,9 +225,8 @@
                         </div>
                     </div>
 
-                    <!-- บัตร TrueMoney (โทนชมพูตามสเปกสี #FEADC4) -->
-                    <div class="virtual-card relative bg-gradient-to-br from-[#FEADC4] to-[#f783ac] rounded-[24px] p-5 shadow-lg shadow-pink-300/30 overflow-hidden cursor-pointer border border-white/60" onclick="copyText('0967842214', this, 'true')">
-                        <!-- ลายน้ำ True -->
+                    <!-- บัตร TrueMoney -->
+                    <div class="virtual-card relative bg-gradient-to-br from-[#FEADC4] to-[#f783ac] rounded-[24px] p-5 shadow-lg shadow-pink-300/30 overflow-hidden cursor-pointer border border-white/60" onclick="copyText('0967842214', this, 'true', 'คัดลอกเลขบัญชีแล้ว')">
                         <svg class="absolute -left-6 -top-6 w-32 h-32 text-white opacity-25 transform rotate-12 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
                         <div class="relative z-10 flex flex-col gap-4">
@@ -253,20 +246,36 @@
                         </div>
                     </div>
 
-                    <!-- กล่องเตือน +5 บาท (ดีไซน์ใหม่แบบคูปองให้โดดเด่น แตกต่าง) -->
+                    <!-- กล่องคัดลอกข้อความโน๊ตสลิป -->
+                    <div class="relative bg-white/90 rounded-[20px] p-3.5 border border-pink-200 shadow-sm flex items-center justify-between gap-3 cursor-pointer hover:bg-pink-50/50 transition-colors" onclick="copyText('โอนให้ร้านจลบ line @582llrkz', this, 'note', 'คัดลอกข้อความโน๊ตสลิปแล้ว')">
+                        <div class="flex items-center gap-2.5">
+                            <div class="bg-pink-100 p-2 rounded-xl text-pink-500 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-[10px] font-semibold text-pink-400">โน๊ตสลิปทุกครั้งนะคะ</div>
+                                <div class="text-[12px] font-bold text-brown-600">โอนให้ร้านจลบ line @582llrkz</div>
+                            </div>
+                        </div>
+                        <button class="note-btn bg-pink-50 text-pink-500 hover:bg-pink-100 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 shrink-0 border border-pink-200 transition-colors pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                            คัดลอก
+                        </button>
+                    </div>
+
+                    <!-- กล่องเตือน +5 บาท -->
                     <div class="relative bg-gradient-to-br from-pink-100/90 to-pink-50/90 rounded-[20px] p-3.5 border-2 border-dashed border-pink-300 shadow-sm z-10 overflow-hidden transform transition-transform hover:scale-[1.02] mt-1">
-                        <!-- ลายน้ำหัวใจจิ๋วๆ ในกล่อง -->
                         <svg class="absolute -right-3 -bottom-3 w-14 h-14 text-pink-200/60 transform -rotate-12 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 
                         <div class="flex items-start gap-3 relative z-10">
-                            <!-- ไอคอนแจ้งเตือนเด้งดึ๋ง -->
                             <div class="bg-pink-400 p-1.5 rounded-full shadow-md text-white flex-shrink-0 mt-1 animate-bounce">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3.5 h-3.5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                                 </svg>
                             </div>
                             <div class="text-[11.5px] text-brown-600 leading-relaxed text-left flex-1">
-                                <!-- ป้าย Tag สำคัญ -->
                                 <span class="inline-block bg-pink-500 text-white text-[9px] font-bold px-2 py-0.5 rounded-full mb-1.5 tracking-wider shadow-sm">
                                     สำคัญ
                                 </span><br>
@@ -326,7 +335,7 @@
     </div>
 
     <script>
-        function copyText(text, containerElement, type) {
+        function copyText(text, containerElement, type, toastMessage) {
             const textArea = document.createElement("textarea");
             textArea.value = text;
             textArea.style.position = "fixed";
@@ -339,25 +348,35 @@
             try {
                 document.execCommand('copy');
                 
-                showToast();
+                showToast(toastMessage || 'คัดลอกสำเร็จ');
 
-                // อัปเดตสไตล์ปุ่มเวลาคลิกให้เข้ากับบัตรสไตล์ใหม่
-                const buttonElement = containerElement.querySelector(type === 'kbank' ? '.kbank-btn' : '.true-btn');
+                let buttonSelector = '.kbank-btn';
+                if (type === 'true') buttonSelector = '.true-btn';
+                if (type === 'note') buttonSelector = '.note-btn';
+
+                const buttonElement = containerElement.querySelector(buttonSelector);
                 const originalHtml = buttonElement.innerHTML;
                 
                 buttonElement.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                     สำเร็จ
                 `;
-                // เปลี่ยนปุ่มเป็นสีทึบเพื่อความชัดเจนตอนกด
-                buttonElement.classList.replace('bg-white', 'bg-white/30');
-                buttonElement.classList.replace('text-brown-600', 'text-brown-600');
-                buttonElement.classList.replace('text-pink-500', 'text-brown-600');
+                
+                if (type === 'note') {
+                    buttonElement.classList.replace('bg-pink-50', 'bg-pink-500');
+                    buttonElement.classList.replace('text-pink-500', 'text-white');
+                } else {
+                    buttonElement.classList.replace('bg-white', 'bg-white/30');
+                }
                 
                 setTimeout(() => {
                     buttonElement.innerHTML = originalHtml;
-                    buttonElement.classList.replace('bg-white/30', 'bg-white');
-                    buttonElement.classList.replace('text-white', type === 'kbank' ? 'text-brown-600' : 'text-pink-500');
+                    if (type === 'note') {
+                        buttonElement.classList.replace('bg-pink-500', 'bg-pink-50');
+                        buttonElement.classList.replace('text-white', 'text-pink-500');
+                    } else {
+                        buttonElement.classList.replace('bg-white/30', 'bg-white');
+                    }
                 }, 2000);
 
             } catch (err) {
@@ -367,8 +386,11 @@
             document.body.removeChild(textArea);
         }
 
-        function showToast() {
+        function showToast(message) {
             const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toast-text');
+            if (message) toastText.innerText = message;
+            
             toast.classList.remove('opacity-0', 'translate-y-4');
             toast.classList.add('opacity-100', 'translate-y-0');
             
@@ -379,5 +401,4 @@
         }
     </script>
 </body>
-
 </html>
