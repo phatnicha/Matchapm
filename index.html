@@ -82,9 +82,9 @@
                         themeSky: '#C3E5FF',
                         themeBlue: '#C1CDFE',
                         brown: {
-                            400: '#738290',
-                            500: '#4A5568',
-                            600: '#2D3748',
+                            400: '#703F17',
+                            500: '#703F17',
+                            600: '#703F17',
                         }
                     }
                 }
@@ -109,7 +109,7 @@
     </div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-brown-600/95 backdrop-blur-sm text-white px-6 py-3 rounded-full shadow-xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50 flex items-center gap-2 font-medium text-sm border border-themePink">
+    <div id="toast" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-[#703F17] backdrop-blur-sm text-white px-6 py-3 rounded-full shadow-xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50 flex items-center gap-2 font-medium text-sm border border-themePink">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-themePink">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
@@ -185,7 +185,7 @@
                     <div class="h-px bg-themeBlue/60 flex-1"></div>
                 </div>
 
-                <!-- โซนบัญชีธนาคาร + กล่องเตือนต่างๆ (ปรับให้ใช้สีไม่ซ้ำกัน) -->
+                <!-- โซนบัญชีธนาคาร + กล่องเตือนต่างๆ -->
                 <div class="space-y-4">
                     
                     <!-- 1. บัตรกสิกรไทย (ใช้สี #AFE1C0 ThemeGreen) -->
@@ -254,13 +254,13 @@
                         <svg class="absolute -right-3 -bottom-3 w-14 h-14 text-themeYellow/60 transform -rotate-12 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 
                         <div class="flex items-start gap-3 relative z-10">
-                            <div class="bg-brown-600 p-1.5 rounded-full shadow-md text-white flex-shrink-0 mt-1 animate-bounce">
+                            <div class="bg-[#703F17] p-1.5 rounded-full shadow-md text-white flex-shrink-0 mt-1 animate-bounce">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3.5 h-3.5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                                 </svg>
                             </div>
                             <div class="text-[11.5px] text-brown-600 leading-relaxed text-left flex-1">
-                                <span class="inline-block bg-brown-600 text-white text-[9px] font-bold px-2 py-0.5 rounded-full mb-1.5 tracking-wider shadow-sm">
+                                <span class="inline-block bg-[#703F17] text-white text-[9px] font-bold px-2 py-0.5 rounded-full mb-1.5 tracking-wider shadow-sm">
                                     สำคัญ
                                 </span><br>
                                 <span class="font-bold text-brown-600 text-[12.5px]">เฉพาะคนโอน wallet</span> บวกเพิ่มจากยอด
@@ -286,7 +286,7 @@
                         </div>
                     </div>
 
-                    <!-- 6. กล่องเตือนแปะสลิป (ใช้สีผสม #FEADC4 ThemePink จางๆ ให้เข้ากัน) -->
+                    <!-- 6. กล่องเตือนแปะสลิป (ใช้สีผสม #FEADC4 ThemePink) -->
                     <div class="bg-[#FEADC4]/25 border border-[#FEADC4]/50 rounded-2xl p-3 flex items-start gap-3 text-left shadow-sm">
                         <div class="bg-white p-1.5 rounded-full shadow-sm text-brown-600 flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
